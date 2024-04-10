@@ -1,0 +1,302 @@
+
+.video-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: all ease 500ms;
+    display: none;
+}
+
+.video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    width: 25px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.video-overlay.open {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+    display: block;
+}
+
+.video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 14px solid #ffffff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 47%;
+}
+
+.video-overlay {
+    iframe {
+        width: 70%;
+        height: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+    }
+}
+
+
+
+
+.vedio-icone {
+    position: relative;
+}
+
+.video-play-button {
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+    display: flex;
+
+
+    span {
+        &.outer-text {
+            border: none;
+            font-family: 'Bona Nova';
+            font-size: 20px;
+            min-width: max-content;
+            margin-left: 75px;
+            position: relative;
+            margin-top: -12px;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        transition: all 200ms;
+        background: rgba(255, 255, 255, 0.05);
+        border: .5px solid #ffffff;
+    }
+}
+
+.video-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: all ease 500ms;
+    display: none;
+}
+
+.video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    width: 25px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.video-overlay.open {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+    display: block;
+}
+
+.video-play-button span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 14px solid #ffffff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 47%;
+}
+
+.video-overlay {
+    iframe {
+        width: 70%;
+        height: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+    }
+}
+
+
+
+.video-play-button {
+    box-sizing: content-box;
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+    display: flex;
+    position: relative;
+    span {
+        &.outer-text {
+            border: none;
+            font-family: 'Bona Nova';
+            font-size: 20px;
+            min-width: max-content;
+            margin-left: 75px;
+            position: relative;
+            margin-top: -12px;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        transition: all 200ms;
+        background: rgba(255, 255, 255, 0.05);
+        border: .5px solid #ffffff;
+    }
+}
+
+
+.bg-video-five{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    // span{
+    //     display: none;
+    //     border: none;
+    // }
+    // .video-play-button{
+    //     min-width: 100%;
+    //     min-height: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     position: absolute;
+    //     padding: 0;
+    //     cursor: pointer;
+    //     &::before{
+    //         position: absolute;
+    //         content: '';
+    //         background: #00000000;
+    //         left: 0;
+    //         top: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         cursor: url(../images/banner/26.png), auto;
+    //         // cursor: url(../images/banner/shape/close.png), auto;
+    //     }
+    //     &::after{
+    //         display: none;
+    //     }
+    // }
+
+
+
+    video#myVideo.show {
+        opacity: 1;
+    }
+
+    #myVideo {
+        position: absolute;
+        right: 0;
+        bottom: -225px;
+        min-width: 100%;
+        min-height: max-content;
+        left: 0;
+        opacity: 0;
+    }
+    
+    /* Add some content at the bottom of the video/page */
+    .content {
+        position: absolute;
+        bottom: 0;
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    
+    /* Style the button used to pause/play the video */
+    #myBtn {
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #00000000;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        cursor: url(../images/banner/26.png), auto;
+    }
+    
+    #myBtn:hover {
+        background: #dddddd00;
+        color: black;
+    }
+}

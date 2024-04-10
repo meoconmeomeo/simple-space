@@ -1,0 +1,59 @@
+// brand area start
+
+
+.brand-area-wrapper-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    img{
+        transition: .3s;
+        &:hover{
+            filter: invert(1);
+        }
+        @media #{$large-mobile} {
+            max-width: 120px;
+        }
+    }
+}
+
+
+#counter {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.titlte-brand-small{
+    text-align: center;
+    margin-bottom: 40px;
+    p{
+        color: #30373E;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        text-transform: capitalize;
+    }
+}
+
+.brand-style-three{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media #{$md-layout} {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    @media #{$sm-layout} {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        img{
+            max-width: 120px;
+        }
+    }
+}
+

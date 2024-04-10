@@ -1,0 +1,110 @@
+.cta-area-two{
+    height: 500px;
+    background-image: url(../images/cta/01.jpg);
+    background-attachment: fixed;
+    .vedio-icone{
+        span{
+            border-left: 25px solid #ffffff;
+            border-top: 14px solid transparent;
+            border-bottom: 14px solid transparent;
+        }
+    }
+}
+
+.bg_video-three{
+    background-image: url(../images/cta/02.jpg);
+    height: 679px;
+    position: relative;
+    @media #{$sm-layout} {
+        height: 911px !important;
+    }
+    @media #{$large-mobile} {
+        height: 911px !important;
+    }
+    .bottom-counter-area{
+        position: absolute;
+        width: 1170px;
+        right: 0;
+        left: auto;
+        bottom: -60px;
+        @media #{$smlg-device} {
+            width: 100%;
+        }
+        .counter-main-wrapper-two{
+            background: #151618 !important;
+            padding: 60px 120px;
+            border: none;
+            @media #{$large-mobile} {
+                padding: 80px 30px;
+            }
+        }
+    }
+}
+
+
+.cta-area-six{
+    .title{
+        color: #30373E;
+        text-align: center;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px;
+        @media #{$large-mobile} {
+            font-size: 26px;
+            line-height: 34px;
+        }
+    }
+    .rts-btn{
+        padding: 10px 40px !important;
+    }
+}
+
+.index-four{
+    .rts-cta-main-wrapper.bg-3{
+        .title{
+            color: #fff;
+        }
+        &::before{
+            background-image: linear-gradient(90deg, #1E1F22, #1E1F22 75%, transparent 75%, transparent 100%);
+        }
+        &::after{
+            background-image: linear-gradient(90deg, #1E1F22, #1E1F22 75%, transparent 75%, transparent 100%);
+        }
+    }
+}
+
+
+
+.rts-cta-main-wrapper{
+    .rts-btn{
+        &:hover{
+            background: var(--color-primary);
+            border: 1px solid transparent;
+            color: #fff;
+        }
+    }
+}
+
+.cta-inner-area{
+    background-image: url(../images/cta/03.jpg);
+    a.rts-btn{
+        margin: auto;
+        border-color: #30373E !important;  
+        color: #30373E !important;
+        &:hover{
+            border-color: var(--color-primary) !important;
+            color: #fff !important;
+        }
+    }
+}
+
+.cta-area-two.bg_image{
+    position: relative;
+    .vedio-icone{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

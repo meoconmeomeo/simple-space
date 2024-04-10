@@ -1,0 +1,190 @@
+.title-process-stock-text{
+    text-align: center;
+    .stock-text-1{
+        text-align: center;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #E3E3E3;
+        color: transparent;
+        font-family: var(--font-primary);
+        @media #{$md-layout} {
+            font-size: 55px;
+        }
+        @media #{$sm-layout} {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+}
+
+
+
+// single working process one
+.single-working-prcess-one{
+    position: relative;
+    height: 100%;
+    &.two{
+        .inner{
+            &::after{
+                background-image: url(../images/why-choose/06.jpg);
+            }
+        }
+    }
+    &.three{
+        .inner{
+            &::after{
+                background-image: url(../images/why-choose/07.jpg);
+            }
+        }
+    }
+    &.four{
+        .inner{
+            &::after{
+                background-image: url(../images/why-choose/08.jpg);
+            }
+        }
+    }
+    .inner{
+        height: 100%;
+        padding: 30px;
+        background: #F6F6F6;
+        position: relative;
+        z-index: 1;
+        @media #{$large-mobile} {
+            padding: 20px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(../images/why-choose/05.jpg);
+            width: 0%;
+            height: 100%;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-size: cover;
+            transition: .3s;
+        }
+    }
+    &:hover{
+        &::after{
+            background: #30373E;
+        }
+        &::before{
+            opacity: 1;
+        }
+        .inner{
+            &::after{
+                width: 100%;
+            }
+            .title{
+                color: #fff;
+            }
+            p.disc{
+                color: #fff;
+            }
+        }
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: -21%;
+        transform: translateX(-50%);
+        width: 8px;
+        height: 8px;
+        background: #E3E3E3;
+        border-radius: 50%;transition: .3s;
+        z-index: 2;
+        @media #{$smlg-device} {
+            display: none;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: -22%;
+        transform: translateX(-50%);
+        width: 16px;
+        height: 16px;
+        background: transparent;
+        border-radius: 50%;
+        border: 1px solid #30373E;
+        opacity: 0;
+        transition: .3s;
+        z-index: 2;
+        @media #{$smlg-device} {
+            display: none;
+        }
+    }
+    span{
+        font-size: 120px;
+        line-height: 100px;
+        color: transparent;
+        font-weight: 700;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: #E3E3E3;
+        display: block;
+        margin-bottom: 106px;
+    }
+    .title{
+        color: #30373E;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    p.disc{
+        color: #7D7D7D;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.32px;
+    }
+    &.active{
+        &::after{
+            background: #30373E;
+        }
+        &::before{
+            opacity: 1;
+        }
+        .inner{
+            &::after{
+                width: 100%;
+            }
+            .title{
+                color: #fff;
+            }
+            p.disc{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.separetor-process-top{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 0;
+        width: 98%;
+        height: 1px;
+        background: #E3E3E3;
+        transform: translateX(-50%);
+        @media #{$small-mobile} {
+            display: none;
+        }
+    }
+}
+
+
+
+

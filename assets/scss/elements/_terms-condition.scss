@@ -1,0 +1,58 @@
+
+// terms & condition area
+
+.terms-wrapper-main{
+    padding: 0 250px;
+    @media #{$smlg-device} {
+        padding: 0 50px;
+    }
+    @media #{$large-mobile} {
+        padding: 0 5px;
+    }
+    .title-top{
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 44px;
+    }   
+    p.disc{
+        margin-bottom: 25px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .title{
+        margin-bottom: 25px;
+        margin-top: 35px;
+    }
+}
+
+.faqs-page-wrapper-area{
+    .faq-style-two{
+        margin-top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 30px;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        button{
+            &::after{
+                @media #{$large-mobile} {
+                    display: none;
+                }
+            }
+        }
+        .left-accordion-faq{
+            flex-basis: 100%;
+            width: 100%;
+            background: #f6f6f6;
+            padding: 50px;
+            @media #{$large-mobile} {
+                padding: 15px;
+            }
+        }
+        .accordion-item{
+            background: transparent;
+        }
+    }
+}

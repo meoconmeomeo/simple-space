@@ -1,0 +1,29 @@
+// progress
+.progress-wrapper-main{
+    .single-progress-area-h{
+        margin-top: 40px;
+        .progress-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .name{
+                color: var(--color-primary);
+                margin-bottom: 15px;
+            }
+            .parcent{
+                color: var(--color-primary);
+            }
+        }
+        .progress{
+            height: 4px;
+            border-radius: 0;
+            .progress-bar{
+                background: var(--color-primary);
+            }
+        }
+    }
+}
+
+.bg-3{
+    background-color: #151618;
+}

@@ -1,0 +1,108 @@
+/*=== Scss File indexing Here===========
+
+1. variables
+2.typography
+3.spacing
+4.reset
+5.forms
+6.mixins
+7.shortcode
+8.animations
+9.text-animation'
+10.header'
+11.nav
+12.common
+13.banner
+14.button
+15.video
+16.about
+17.service
+18.service-details
+19.working Process
+20.Product
+21.product-details
+22.testimonials 
+23.blog
+24. Team
+25. Footer
+26.brand
+27.counter
+28.cta
+29.social
+30.why-choose-us
+31.progress
+32.faq
+33.adter Before
+34.side-bar
+35.mobile-menu
+36.blog-single
+37.pricing
+38.drop-down
+39.pre-loading
+40.contact
+41.back-to-top
+42.search-show
+44.terms & condition
+45.contact
+46.Preloader
+
+========================================*/
+
+
+
+/* Default  */
+
+@import'default/variables';
+@import'default/typography';
+@import'default/spacing';
+@import'default/reset';
+@import'default/forms';
+@import'default/mixins';
+@import'default/shortcode';
+@import'default/animations';
+@import'default/text-animation';
+
+
+
+/* Header */
+
+@import'header/header';
+@import'header/nav';
+
+
+/* Elements */
+
+
+@import'elements/common';
+@import'elements/banner';
+@import'elements/button';
+@import'elements/video';
+@import'elements/about';
+@import'elements/service';
+@import'elements/service-details';
+@import'elements/working-process';
+@import'elements/product';
+@import'elements/product-details';
+@import'elements/testimonials';
+@import'elements/blog';
+@import'elements/team';
+@import'elements/footer';
+@import'elements/brand';
+@import'elements/counter';
+@import'elements/cta';
+@import'elements/social';
+@import'elements/why-choose-us';
+@import'elements/progress';
+@import'elements/faq';
+@import'elements/after-before';
+@import'elements/side-bar';
+@import'elements/mobile-menu';
+@import'elements/blog-single';
+@import'elements/pricing';
+@import'elements/back-to-top';
+@import'elements/search-show';
+@import'elements/terms-condition';
+@import'elements/contact';
+@import'elements/preloader';
+
+

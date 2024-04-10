@@ -1,0 +1,126 @@
+
+.bg-faqs-7{
+    background-image: url(../images/faq/01.jpg);
+    height: 559px;
+    @media #{$md-layout} {
+        height: auto;
+    }
+    @media #{$sm-layout} {
+        height: auto;
+    }
+}
+
+.faq-style-two{
+    height: 559px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 128px;
+    background: #fff;
+    margin-top: 110px;
+    padding: 100px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    @media #{$smlg-device} {
+        gap: 20px;
+    }
+    @media #{$md-layout} {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        height: auto;
+    }
+    @media #{$sm-layout} {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px;
+    }
+    .left-accordion-faq{
+        flex-basis: 50%;
+    }
+    .right-image{
+        @media #{$md-layout} {
+            min-width: 100%;
+        }
+        @media #{$sm-layout} {
+            min-width: 100%;
+        }
+        img{
+            @media #{$md-layout} {
+                min-width: 100%;
+            }
+            @media #{$sm-layout} {
+                min-width: 100%;
+            }
+        }
+    }
+    .left-accordion-faq{
+        .title-faq-area-2{
+            margin-bottom: 25px;
+            .pre{
+                padding-left: 0;
+                color: #30373E;
+                &::after{
+                    display: none;
+                }
+            }
+            .title{
+                color: #30373E;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 45px;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+                margin-top: 0px;
+            }
+        }
+    }
+    .accordion{
+        .accordion-item{
+            border: none;
+            box-shadow: none;
+            padding-bottom: 13px;
+            padding-top: 13px;
+            border-bottom: 1px solid #E3E3E3;
+            .accordion-button{
+                color: #30373E;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px;
+                background: transparent;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+                position: relative;
+                &::after{
+                    background-image: none;
+                    content: "\2b";
+                    font-family: var(--font-3);
+                    font-size: 16px;
+                    transform: none;
+                    top: 0;
+                    position: absolute;
+                    right: 15px;
+                    @media #{$small-mobile} {
+                        display: none;
+                    }
+                }
+                &[aria-expanded="true"]{
+                    &::after{
+                        content: '\f068';
+                    }
+                }
+                &:focus{
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+            .accordion-body{
+                padding: 0;
+                padding-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+
+.rts-btn{
+    padding: 9px 36px;
+    min-width: max-content;
+    font-size: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: max-content;
+    transition: .3s;
+    &:hover{
+        transform: translateY(-3px) scale(1.02);
+    }
+    &.btn-border{
+        border: 1px solid #88919B;
+    }
+    &.btn-primary{
+        background: var(--color-primary) !important;
+    }
+}
+
+.rts-about-area-three{
+    background: #151618;
+}
+
+.rts-btn.btn-border.radious-3{
+    border-radius: 30px;
+    border: 1px solid #1E1F22;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    i{
+        margin-left: 7px;
+    }
+    &:hover{
+        background: var(--color-primary);
+    }
+}
+
+.rts-read-more-circle-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #30373E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    transition: .3s;
+    i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #30373E;
+        transition: .3s;
+    }
+    &.under-line{
+        p{
+            text-decoration: underline;
+        }
+    }
+    &:hover{
+        i{
+            transform: scale(1.2);
+            background: var(--color-primary);
+            color: #fff;
+            border: transparent;
+        }
+    }
+}
+
+
+
+
+.rts-btn.btn-border-with-radious.bg-white{
+    border: 1px solid #E3E3E3;
+    border-radius: 30px;
+}
